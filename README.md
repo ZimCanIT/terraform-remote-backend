@@ -1,7 +1,3 @@
-Thank you for the clarification. I'll reformat the second README based on the style and formatting of the first README.
-
----
-
 # Terraform Remote Backend
 
 ## Aim
@@ -28,7 +24,3 @@ Thank you for the clarification. I'll reformat the second README based on the st
 ## Documentation 
 1. [Implement Intersite Connectivity](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.md)
 2. [Terraform Backend Documentation](https://developer.hashicorp.com/terraform/language/settings/backends/configuration)
-
----
-
-This version is now consistent with the style and structure of the first README, ensuring uniformity across your documentation.
