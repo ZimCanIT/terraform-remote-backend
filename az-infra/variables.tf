@@ -5,21 +5,9 @@ variable "subscription_id" {
   description = "Subscription to deploy resources into, declared in .tfvars"
   type        = string
 }
-variable "resource_group_name" {
-  description = "The name of the resource group, referenced as an env. variable."
-  type        = string
-}
 variable "deployment_location" {
   type    = string
   default = "uksouth"
-}
-variable "storage_account_name" {
-  description = "The name of the storage account, referenced as an env. variable."
-  type        = string
-}
-variable "container_name" {
-  description = "The name of the container in the storage account, referenced as an env. variable"
-  type        = string
 }
 variable "key" {
   description = "The name of the state store file to be created."
