@@ -7,6 +7,8 @@ $container_name="tfstate"
 # path to the provider.tf file
 $providerFilePath = "az-infra\provider.tf"
 
+az login
+# set subsctiption: az account set --subscription <subscription id>
 
 az group create --name $resource_group_name --location $deployment_location
 az storage account create --resource-group $resource_group_name --name $storage_account_name --sku Standard_LRS --encryption-services blob

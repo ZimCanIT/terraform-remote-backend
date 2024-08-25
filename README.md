@@ -1,7 +1,7 @@
 # Terraform Remote Backend
 
 ## Aim
-* Deploy VNet peering infrastructure and enable testing of intersite connectivity using Terraform with a remote backend.
+* Deploy terraform config. whilst showcasing state locking and remote backend configuration 
 * Deployment is performed using the Azure CLI and Terraform installed in your environment.
   * **[Install Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)**
   * **[Install Terraform](https://developer.hashicorp.com/terraform/install)**
@@ -19,8 +19,13 @@
 
 ## Testing 
 1. **Review the state of the Terraform state file:**
-   - While deploying the Terraform configuration in Azure, check the state file to ensure that the infrastructure is being correctly deployed.
+   - Download and review the state file stored in the blob container
+2. **Review the lease acquired on the state file when a terraform workflow command is in use**
+   - Deprovision infrastructure with: `terraform destroy --auto-approve`
+   - Attempt to run the same command again, with the original destroy command running  
+
+![alt text](image.png)
+
 
 ## Documentation 
-1. [Implement Intersite Connectivity](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.md)
-2. [Terraform Backend Documentation](https://developer.hashicorp.com/terraform/language/settings/backends/configuration)
+1. [Terraform Backend configuation docs:](https://developer.hashicorp.com/terraform/language/settings/backends/configuration)
